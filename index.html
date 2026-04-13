@@ -31,6 +31,31 @@
     body {
   overflow-x: hidden;
 }
+    /* Fix navbar overflow */
+.navbar {
+  max-width: 100%;
+}
+
+/* Prevent brand text from breaking layout */
+.brand-text {
+  white-space: nowrap;
+}
+
+/* Mobile fix */
+@media (max-width: 768px) {
+  .brand-text {
+    font-size: 14px;
+  }
+
+  .navbar-brand img {
+    height: 28px;
+  }
+}
+    @media (max-width: 576px) {
+  .brand-text {
+    display: none;
+  }
+}
     .hero h1{font-size:3rem;font-weight:700;}
 
     /* Cards */
